@@ -1,0 +1,80 @@
+
+.rightContainer {
+    justify-self: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.heading1 {
+    padding-top: 70px;
+    margin-bottom: 0 !important;
+}
+
+.heading2 {
+    margin-top: -5px !important	;
+    margin-bottom: 50px !important;
+}
+.chatBtn {
+    padding: 10px 30px;
+    margin: 50px 0;
+    border-radius: 25px;
+    border: hidden;
+    background: linear-gradient(to bottom, cyan, rgb(0, 134, 134));
+    cursor: pointer;
+}
+.chatBtn:hover {
+    background: linear-gradient(to bottom, rgba(0, 255, 255, 0.8), rgba(0, 134, 134, 0.8));
+}
+
+.featuredImage {
+    height: 500px;
+    grid-column: 1;
+    grid-row: 1; 
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    pointer-events: none;
+}
+
+ .frontLayer {
+    height: 500px;
+    grid-column: 1;
+    grid-row: 1; 
+    justify-self: center;
+    align-self: center;
+    pointer-events: none;
+}
+
+.introBrain {
+    height: 350px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    pointer-events: none;
+} 
+
+@media (max-width: 1050px) {
+  
+    .rightContainer {
+        height: 80vw;
+    }
+    .leftContainer {
+        text-align: center;
+        margin: 0 8%;
+        width: auto;
+    }
+}
+
+@media (max-width: 668px) {
+    .heading1 {
+        font-size: 4.5rem !important;
+    }
+    
+    .heading2 {
+        font-size: 2.5rem !important;
+    }
+}

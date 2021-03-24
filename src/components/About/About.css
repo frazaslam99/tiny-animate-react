@@ -1,0 +1,19 @@
+
+.avatar {
+    border: 7px white double;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    user-select: none;
+    pointer-events: none;
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+}
+
+
+.aboutPara {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+
