@@ -62,15 +62,15 @@ const CaseStudies = () => {
                         <h2 style={{ fontSize: "40px" }}>Blog</h2>
                         <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", paddingTop: "70px", paddingBottom: "70px" }} >
                             <Grid item xs={12} md={4}>
-                                <img src={blog1} width="600px" alt="" ref={pic1} />
+                                <img src={blog1} width="450px" alt="" ref={pic1} />
 
                             </Grid>
                             <Grid item xs={12} md={4}>
-                                <img src={blog2} width="600px" alt="" ref={pic2}/>
+                                <img src={blog2} width="450px" alt="" ref={pic2}/>
                             </Grid>
 
                             <Grid item xs={12} md={4}>
-                                <img src={blog3} width="600px" alt="" ref={pic3} />
+                                <img src={blog3} width="450px" alt="" ref={pic3} />
                             </Grid>
                         </Grid>
                     </Grid>
