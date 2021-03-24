@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-    
+
     },
     paper: {
         padding: theme.spacing(2),
@@ -21,28 +21,29 @@ const useStyles = makeStyles((theme) => ({
 const NavBar = () => {
 
     const classes = useStyles();
- 
+
     return (
 
-        <div className={classes.root} className="navbar">
-            <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0" }}>
-                <Grid item xs={12} >
-                    <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0" }}>
-                        <Grid item xs={6}>
-                        <h4 style={{color:"white"}}>My Website</h4>
-                        </Grid>
-                        <Grid item xs={6}>                
-                                <span className="menuBtn"><FaBars /></span>        
+        <div className={classes.root} >
+            <div className="navbar">
+                <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0" }}>
+                    <Grid item xs={12} >
+                        <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0" }}>
+                            <Grid item xs={6}>
+                                <h4 style={{ color: "white" }}>My Website</h4>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <span className="menuBtn"><FaBars /></span>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
-
+            </div>
         </div>
 
 
 
-      
+
     )
 }
 
