@@ -1,5 +1,5 @@
 import React from 'react';
-import { blog1, blog2, blog3, blog4 } from '../../images/images';
+import { blog1, blog2, blog3} from '../../images/images';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import useWebAnimations, { backInLeft,backInDown,backInRight} from '@wellyshen/use-web-animations';
