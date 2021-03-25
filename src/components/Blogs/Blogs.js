@@ -61,7 +61,7 @@ const CaseStudies = () => {
                 <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", backgroundColor: "#dddfcb" }}>
                     <Grid item xs={12} >
                         <center>
-                            <h2 style={{ fontSize: "40px" }}>Blog</h2>
+                            <h2 style={{ fontSize: "40px", paddingTop: "20px"  }}>Blog</h2>
 
                         </center>
                         <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", paddingTop: "70px", paddingBottom: "70px" }} >

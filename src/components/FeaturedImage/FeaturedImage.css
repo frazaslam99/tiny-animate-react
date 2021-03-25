@@ -1,4 +1,6 @@
-
+.grid{
+    padding: 0 !important;
+}
 .rightContainer {
     justify-self: center;
     justify-content: center;
@@ -14,7 +16,7 @@
 .heading1 {
     padding-top: 70px;
     margin-bottom: 0 !important;
-    font-size: 30px;
+    
 }
 
 .heading2 {
@@ -36,7 +38,6 @@
 
 .featuredImage {
     margin: 0% !important;
-    width: 300px;
     height: 500px;
     grid-column: 1;
     grid-row: 1; 

@@ -2,15 +2,15 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-import { Link } from "react-router-dom";
-
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
+import { Link } from "react-router-dom";
+
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -30,14 +30,14 @@ const useStyles = makeStyles((theme) => ({
     },
     appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
+        marginLeft: drawerWidth,
         transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.easeOut,
             duration: theme.transitions.duration.enteringScreen,
         }),
-        marginRight: drawerWidth,
     },
-    title: {
-        flexGrow: 1,
+    menuButton: {
+        marginRight: theme.spacing(2),
     },
     hide: {
         display: 'none',
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(0, 1),
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
-        justifyContent: 'flex-start',
+        justifyContent: 'flex-end',
     },
     content: {
         flexGrow: 1,
@@ -64,18 +64,18 @@ const useStyles = makeStyles((theme) => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        marginRight: -drawerWidth,
+        marginLeft: -drawerWidth,
     },
     contentShift: {
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.easeOut,
             duration: theme.transitions.duration.enteringScreen,
         }),
-        marginRight: 0,
+        marginLeft: 0,
     },
 }));
 
-export default function PersistentDrawerRight() {
+export default function PersistentDrawerLeft() {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -98,32 +98,24 @@ export default function PersistentDrawerRight() {
                 })}
             >
                 <Toolbar>
-                    <Typography variant="h6" noWrap className={classes.title}>
-                        Animation
-          </Typography>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
-                        edge="end"
                         onClick={handleDrawerOpen}
-                        className={clsx(open && classes.hide)} 
-                        style={{paddingRight:"50px"}}
+                        edge="start"
+                        className={clsx(classes.menuButton, open && classes.hide)}
                     >
                         <MenuIcon />
                     </IconButton>
+                    <Typography variant="h6" noWrap>
+                        Animation
+          </Typography>
                 </Toolbar>
             </AppBar>
-            <main
-                className={clsx(classes.content, {
-                    [classes.contentShift]: open,
-                })}
-            >
-                <div className={classes.drawerHeader} />
-            </main>
             <Drawer
                 className={classes.drawer}
                 variant="persistent"
-                anchor="right"
+                anchor="left"
                 open={open}
                 classes={{
                     paper: classes.drawerPaper,
@@ -131,21 +123,22 @@ export default function PersistentDrawerRight() {
             >
                 <div className={classes.drawerHeader}>
                     <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                        {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </div>
                 <Divider />
                 <List>
-                <div style={{alignItems:"center" ,margin:"0 auto",textAlign:"center"}}>
-                    <Link to="/" style={{color:"#c72b2b",fontSize:"20px"}} ><span>Home</span></Link><br/><br/>
-                    <Link to="/about" style={{color:"#c72b2b",fontSize:"20px"}} ><span>About Us</span></Link><br/><br/>
-                    <Link to="/service" style={{color:"#c72b2b",fontSize:"20px"}} ><span>Services</span></Link><br/><br/>
-                    <Link to="/blogs" style={{color:"#c72b2b",fontSize:"20px"}} ><span>Blogs</span></Link><br/><br/>
+                    <div style={{ alignItems: "center", margin: "0 auto", textAlign: "center" }}>
+                        <Link to="/" style={{ color: "#c72b2b", fontSize: "20px" }} ><span>Home</span></Link><br /><br />
+                        <Link to="/about" style={{ color: "#c72b2b", fontSize: "20px" }} ><span>About Us</span></Link><br /><br />
+                        <Link to="/service" style={{ color: "#c72b2b", fontSize: "20px" }} ><span>Services</span></Link><br /><br />
+                        <Link to="/blogs" style={{ color: "#c72b2b", fontSize: "20px" }} ><span>Blogs</span></Link><br /><br />
 
-                </div>
+                    </div>
                 </List>
 
             </Drawer>
+
         </div>
     );
 }

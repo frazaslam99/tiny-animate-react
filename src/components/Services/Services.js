@@ -95,7 +95,7 @@ const Services = () => {
                 <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", backgroundColor: "#bea3be" }}>
                     <Grid item xs={12} >
                         <center>
-                            <h2 style={{ fontSize: "40px" }}>Services</h2>
+                            <h2 style={{ fontSize: "40px", paddingTop: "20px"  }}>Services</h2>
 
                         </center>
                         <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", paddingTop: "50px" }} >
@@ -111,7 +111,7 @@ const Services = () => {
                             <Grid item xs={12}  md={12} lg={6}>
                                 <center>
                                     <Typography variant="h3" style={{ color: "#ffffff" }}>Hypertext Markup Language</Typography>
-                                    <Typography variant="subtitle1" style={{ color: '#ffffff', paddingTop: "35px", fontSize: "20px" }} ref={para1}>
+                                    <Typography variant="subtitle1" style={{ color: '#ffffff', paddingTop: "25px", fontSize: "15px" }} ref={para1}>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis quam assumenda! Fugit, voluptate. Exercitationem officiis voluptates temporibus dicta vero quasi et, corporis laudantium consectetur numquam rerum esse odio est dignissimos aspernatur. Illum ea dignissimos sunt. Dolores dolore eos in fugiat esse, repudiandae rerum possimus aliquid, perspiciatis voluptatibus numquam earum! Distinctio nihil doloribus, illum odit quibusdam fuga aut? Id unde enim repudiandae hic. Soluta saepe sequi tempora amet quis provident. Nostrum repellendus ea ab natus omnis cumque, adipisci nam accusamus!
                 </Typography>
                                 </center>
@@ -139,7 +139,7 @@ const Services = () => {
 
                                     <Typography variant="h3" style={{ color: "#ffffff" }}>Cascading Style Sheets</Typography>
 
-                                    <Typography variant="subtitle1" style={{ color: '#ffffff', paddingTop: "35px", fontSize: "20px" }} ref={para2}>
+                                    <Typography variant="subtitle1" style={{ color: '#ffffff', paddingTop: "25px", fontSize: "15px" }} ref={para2}>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis quam assumenda! Fugit, voluptate. Exercitationem officiis voluptates temporibus dicta vero quasi et, corporis laudantium consectetur numquam rerum esse odio est dignissimos aspernatur. Illum ea dignissimos sunt. Dolores dolore eos in fugiat esse, repudiandae rerum possimus aliquid, perspiciatis voluptatibus numquam earum! Distinctio nihil doloribus, illum odit quibusdam fuga aut? Id unde enim repudiandae hic. Soluta saepe sequi tempora amet quis provident. Nostrum repellendus ea ab natus omnis cumque, adipisci nam accusamus!
                 </Typography>
                                 </center>
@@ -168,7 +168,7 @@ const Services = () => {
 
                                     <Typography variant="h3" style={{ color: "#ffffff" }}>JavaScript</Typography>
 
-                                    <Typography variant="subtitle1" style={{ color: '#ffffff', paddingTop: "35px", fontSize: "20px" }} ref={para3}>
+                                    <Typography variant="subtitle1" style={{ color: '#ffffff', paddingTop: "25px", fontSize: "15px" }} ref={para3}>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis quam assumenda! Fugit, voluptate. Exercitationem officiis voluptates temporibus dicta vero quasi et, corporis laudantium consectetur numquam rerum esse odio est dignissimos aspernatur. Illum ea dignissimos sunt. Dolores dolore eos in fugiat esse, repudiandae rerum possimus aliquid, perspiciatis voluptatibus numquam earum! Distinctio nihil doloribus, illum odit quibusdam fuga aut? Id unde enim repudiandae hic. Soluta saepe sequi tempora amet quis provident. Nostrum repellendus ea ab natus omnis cumque, adipisci nam accusamus!
                 </Typography>
                                 </center>

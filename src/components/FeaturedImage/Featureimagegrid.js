@@ -49,10 +49,10 @@ export default function FeaturedImage() {
 
         <div className={classes.root}>
 
-            <div style={{ paddingTop: "10px" }}>
+            <div style={{ paddingTop: "30px" }}>
                 <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0" }}>
-                    <Grid item xs={12}   >
-                        <Grid container spacing={3} style={{ backgroundColor: "black",margin:"0" ,width:"100%"}}>
+                    <Grid item xs={12} className="grid"  >
+                        <Grid container spacing={3} style={{ backgroundColor: "black",margin:"0" ,width:"100%"}} className="conta">
                             <Grid item xs={12}  md={12} lg={6}>
                                 <div>
                                 <center>

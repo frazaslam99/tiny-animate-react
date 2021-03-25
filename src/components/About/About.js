@@ -42,7 +42,7 @@ export default function About() {
                 <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", backgroundColor: "purple" }}>
                     <Grid item xs={12} >
                     <center>
-                        <h2 style={{ fontSize: "40px" }}>About Us</h2>
+                        <h2 style={{ fontSize: "40px", paddingTop: "20px"  }}>About Us</h2>
 
                     </center>
                         <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0", paddingTop: "70px",paddingBottom:"70px" }} >
@@ -52,7 +52,7 @@ export default function About() {
                             </Grid>
                             <Grid item xs={12} md={6}>
                             <center>
-                                <Typography variant="subtitle1" style={{ fontSize: "25px", paddingTop: "25px", fontWeight: 500 }} ref={para} className="aboutPara">
+                                <Typography variant="subtitle1" style={{ fontSize: "25px", fontWeight: 200 }} ref={para} className="aboutPara">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur modi <br />
                                     voluptates dolores facere, molestiae, provident, libero numquam assumenda eos  <br />
                                     tempore rerum at voluptatem minima?
