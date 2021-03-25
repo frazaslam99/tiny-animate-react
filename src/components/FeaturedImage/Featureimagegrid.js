@@ -52,30 +52,39 @@ export default function FeaturedImage() {
             <div style={{ paddingTop: "10px" }}>
                 <Grid container spacing={3} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "0" }}>
                     <Grid item xs={12}   >
-                        <Grid container spacing={3} style={{ backgroundColor: "black"}}>
-                            <Grid item xs={12} md={6}>
+                        <Grid container spacing={3} style={{ backgroundColor: "black",margin:"0" ,width:"100%"}}>
+                            <Grid item xs={12}  md={12} lg={6}>
                                 <div>
-
-                                    <Typography variant="h1" style={{ color: '#ffffff' }} className="heading1">
-                                        <span ref={headi}>ANIMATION</span>
+                                <center>
+                                    <Typography variant="h2" style={{ color: '#ffffff' }} className="heading1" ref={headi}>
+                                        ANIMATION
                                    
                                     </Typography>
                                     <Typography variant="h2" style={{ color: '#ffffff' }}  className="heading2">TINY SITE</Typography>
-                                    <Typography variant="h5" style={{ color: '#ffffff' }} className="heading">
+                                    <Typography variant="h5" style={{ color: '#ffffff'}} className="heading">
                                         Enhance your communications with psychology- <br />
                                         based copywriting and UX writing
                 </Typography>
                                     <button className="chatBtn" ref={button}>
+                                  
+
                                         <Typography variant="subtitle1">Send a message</Typography>
                                     </button>
+                                    </center>
                                 </div>
                             </Grid>
-                            <Grid itemxs={12} md={6}>
+                            <Grid item xs={12} md={12} lg={6}>
+                            <center>
+
                                 <div className="rightContainer">
+                                
                                     <img src={IntroFeatured} alt="" className="featuredImage" />
                                     <img src={IntroFrontLayer} alt="" className="frontLayer" ref={layerRef} />
                                     <img src={IntroBrain} alt="" className="introBrain" ref={brainRef} />
                                 </div>
+                                
+                                </center>
+
                             </Grid>
                         </Grid>
                     </Grid>

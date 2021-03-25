@@ -11,15 +11,43 @@
     /* position: fixed; */
 }
 
+
 .menuBtn {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 30px;
-    padding-right: 80px;
+   
+    display: none;
     cursor: pointer;
+    align-items: flex-end;
 }
 .menuBtn:hover {
     background: rgba(0, 0, 0, 0.2);
+}
+
+
+.menuname{
+    color: white;
+    align-items: flex-end;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    cursor: pointer;
+    
+}
+
+span:hover {
+    background: rgba(71, 21, 21, 0.2);
+}
+
+@media (max-width: 740px) {
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+        float: right;
+        padding-top: 35px;
+        color: white;
+        
+    }
+    .menuname{
+        display: none;
+    }
 }
