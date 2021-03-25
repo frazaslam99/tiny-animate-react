@@ -106,7 +106,8 @@ export default function PersistentDrawerRight() {
                         aria-label="open drawer"
                         edge="end"
                         onClick={handleDrawerOpen}
-                        className={clsx(open && classes.hide)}
+                        className={clsx(open && classes.hide)} 
+                        style={{paddingRight:"50px"}}
                     >
                         <MenuIcon />
                     </IconButton>

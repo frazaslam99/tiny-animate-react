@@ -102,7 +102,7 @@ const Services = () => {
                             <Grid item xs={12} md={12} lg={6}>
                                 <center>
                                     <div ref={service1Ref}>
-                                        <img src={service1} width="450px" alt="" />
+                                        <img src={service1} width="330px" alt="" />
                                     </div>
 
                                 </center>
@@ -129,7 +129,7 @@ const Services = () => {
                             <Grid item xs={12} md={6}>
                                 <center>
                                     <div ref={service2Ref}>
-                                        <img src={service2} width="480px" height="400px" alt="" />
+                                        <img src={service2} width="330px" height="400px" alt="" />
                                     </div>
                                 </center>
 
@@ -158,7 +158,7 @@ const Services = () => {
                                 <center>
 
                                     <div ref={service3Ref}>
-                                        <img src={service3} width="480px" height="380px" alt="" />
+                                        <img src={service3} width="330px" height="380px" alt="" />
                                     </div>
                                 </center>
 
